@@ -18,6 +18,7 @@ export default function Pag () {
   return (
     <>
       <Stack spacing={2}>
+
           <Pagination
           count={Math.ceil(totalCount/perPage)}
           page={currentPage}
@@ -33,6 +34,7 @@ export default function Pag () {
             />
             )}
             />
+            
           </Stack>
             </>
 ) 

@@ -16,8 +16,8 @@ export default function Form() {
     <>
     <InputField/>
     <List />
-    {items.length === perPage&& <Pag/>}
-    <ToastContainer transition={Zoom} autoClose={3000} />
+      {items.length === perPage && <Pag />}
+      <ToastContainer transition={Zoom} autoClose={3000} />
     </>
 ) 
 };

@@ -5,7 +5,8 @@
   align-items: center;
   text-align: center;
   text-align: center;
-  border: 2px solid blackß;
+  border: 2px solid black;
+  padding: 20px;
 }
 .thumb {
   display: flex;
@@ -15,7 +16,6 @@
 }
 .desc {
   text-align: justify;
-  font-size: 20px;
   color: #000;
   border-bottom: 2px solid #000;
 }

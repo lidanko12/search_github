@@ -11,7 +11,7 @@ import { useSelector} from "react-redux";
 export default function InputField() {
 const dispatch = useDispatch();
 
-const { totalCount, currentPage, perPage,repo } = useSelector(({ repositories }) => repositories.currentPage);
+const { totalCount, currentPage, perPage,repo} = useSelector(({ repositories }) => repositories.currentPage);
 const onChangeHandler = e => {
   dispatch(actions.setCurrentPage({ perPage, totalCount, currentPage, repo: e.target.value }))
   
@@ -35,14 +35,15 @@ const onChangeHandler = e => {
   const submitHandler = (e) => {
     e.preventDefault();
     getData();
-    dispatch(actions.setCurrentPage())
+    dispatch(actions.setCurrentPage()) 
   }
     return (
-        <>
+      <>
+        <section className={s.conteiner}>
+
             <div className={s.header__search }>
-                <form className={s.form} onSubmit={(e)=>submitHandler(e)}>
-            <label className={s.label}>
-                Name
+                <form onSubmit={(e)=>submitHandler(e)}>
+            <label>
                 <input
                     type="text"
                     autoComplete='off'       
@@ -58,6 +59,7 @@ const onChangeHandler = e => {
                 <Button  type="submit">Search</Button>
             </form>
             </div>
+        </section>
         
         </>
     )
