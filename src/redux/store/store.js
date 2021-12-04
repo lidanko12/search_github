@@ -12,7 +12,6 @@ import {
 import combineReducers from '../users/user-reducer'
 import logger from 'redux-logger';
 import storage from "redux-persist/lib/storage";
-import { currentPage } from "../users/user-reducer";
 
 
 const middleware = [
@@ -24,11 +23,6 @@ const middleware = [
   logger,
 ];
 
-// const authPersistConfig = {
-//     key: 'auth',
-//     storage,
-//     whitelist: ['token'],
-// };
 
 const repoPersistConfig = {
   key: "items",

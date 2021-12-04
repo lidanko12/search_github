@@ -25,7 +25,7 @@ export default function MainPage() {
 	// ...
 	return (!!isLoading &&
 	
-			<animated.h1 style={{ textAlign: 'center', fontSize: '40px', ...styles }}>Baran Alexander</animated.h1>)
+			<animated.h1 style={{ textAlign: 'center', fontSize:'40px', ...styles }}>Baran Alexander</animated.h1>)
 };
 
 

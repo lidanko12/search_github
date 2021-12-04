@@ -12,15 +12,14 @@ export default function InputField() {
 const dispatch = useDispatch();
 
 const { totalCount, currentPage, perPage,repo } = useSelector(({ repositories }) => repositories.currentPage);
-  
 const onChangeHandler = e => {
-    dispatch(actions.setCurrentPage({perPage,totalCount,currentPage,repo:e.target.value}))
+  dispatch(actions.setCurrentPage({ perPage, totalCount, currentPage, repo: e.target.value }))
+  
   };
   useEffect(() => {
   if (!repo)
-            return
-    getData()  
-    
+    return
+    getData()
   }, [currentPage])
 
   const getData = async () => {

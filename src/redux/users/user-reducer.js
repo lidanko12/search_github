@@ -1,12 +1,12 @@
-import { createAction, createReducer } from "@reduxjs/toolkit";
+import {  createReducer } from "@reduxjs/toolkit";
 import {addRepositoriesSuccess,deleteRepositoriesSuccess,fetchRepositoriesSuccess, setCurrentPage,setClearCurrentPage} from './users-action';
 import { combineReducers } from "redux";
 
-const initialState = {
+let initialState = {
     repo:'',
     perPage: 12,
     currentPage: 1,
-    totalCount:500,
+    totalCount:1000,
 
 };
 

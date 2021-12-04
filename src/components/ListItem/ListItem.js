@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import s from './ListItem.module.css'
 import FavoriteCardButton from "../FavoriteCardButton";
 import { useState } from "react";
-import { Button } from "@mui/material";
 
 
 

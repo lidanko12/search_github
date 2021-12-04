@@ -1,7 +1,6 @@
 import { useDispatch } from 'react-redux';
 import * as actions from '../../redux/users/users-action'
 import { useSelector} from "react-redux";
-import * as selectors from '../../redux/users/user-selector'
 import{Link as NavLink} from 'react-router-dom'
 import {
   Pagination,
@@ -11,7 +10,7 @@ import {
 
 
 export default function Pag () {
-  
+
   const dispatch = useDispatch();
   const { totalCount, currentPage, perPage,repo } = useSelector(({ repositories }) => repositories.currentPage);
   
@@ -19,7 +18,6 @@ export default function Pag () {
   return (
     <>
       <Stack spacing={2}>
-        {!!totalCount && !!perPage&&(
           <Pagination
           count={Math.ceil(totalCount/perPage)}
           page={currentPage}
@@ -35,7 +33,6 @@ export default function Pag () {
             />
             )}
             />
-            )}
           </Stack>
             </>
 ) 
