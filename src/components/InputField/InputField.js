@@ -27,7 +27,6 @@ const onChangeHandler = e => {
     const profileJson = await profile.json();
     if (!repo) return toast.error('Please input repositories');
     if (!repo.trim()) return toast.error('Please input repositories');
-    // if(profileJson) return  toast.error('No find repositories');
     if (profileJson) {
       dispatch(actions.fetchRepositoriesSuccess(profileJson))
     }

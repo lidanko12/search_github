@@ -1,0 +1,39 @@
+.label {
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  margin-top: 80px;
+}
+.back {
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 540px;
+  height: 540px;
+  margin: 0 auto;
+  background-image: url("https://cdn5.vectorstock.com/i/1000x1000/73/49/404-error-page-not-found-miss-paper-with-white-vector-20577349.jpg");
+  @media screen and (min-width: 320px) {
+    height: 250px;
+    width: 250px;
+    padding: 20px;
+  }
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 320px) {
+    max-width: 280px;
+    padding: 20px;
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 648px;
+    padding: 60px 15px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 912px;
+    padding: 60px 15px;
+  }
+}

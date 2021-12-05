@@ -1,5 +1,9 @@
-export default function NotFindPage () {
+import s from './NotFindPage.module.css'
+export default function NotFindPage() {
     return (
-        <h1>Sorry Page Not Find!!!</h1>
+        <div className={s.container}>
+
+<div className={s.back}><h3 className={s.label}>Page Not Find</h3></div>
+        </div>
     )
 }
