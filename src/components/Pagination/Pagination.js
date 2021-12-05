@@ -13,16 +13,13 @@ export default function Pag () {
 
   const dispatch = useDispatch();
   const { totalCount, currentPage, perPage,repo } = useSelector(({ repositories }) => repositories.currentPage);
-  
-  
   return (
     <>
       <Stack spacing={2}>
-
           <Pagination
           count={Math.ceil(totalCount/perPage)}
           page={currentPage}
-            onChange={(_, num) => dispatch(actions.setCurrentPage({perPage,totalCount,currentPage:num,repo}))}
+          onChange={(_, num) => dispatch(actions.setCurrentPage({perPage,totalCount,currentPage:num,repo}))}
           showFirstButton
           showLastButton
           sx={{ marginY: 3, marginX: "auto" }}

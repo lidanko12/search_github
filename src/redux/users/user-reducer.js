@@ -6,7 +6,7 @@ let initialState = {
     repo:'',
     perPage: 12,
     currentPage: 1,
-    totalCount:1000,
+    totalCount:200,
 
 };
 
