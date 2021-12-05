@@ -27,7 +27,7 @@ export default function RepoCard() {
           <img src={repo.owner.avatar_url} alt={repo.owner.login}></img>
                   </div>
           <p className={s.desc}>Login-- {repo.owner.login}</p>
-          <a className={s.link}  rel="noopener noreferrer" target="_blank" href={repo.owner.url}>link </a>
+          <a className={s.link}  rel="noopener noreferrer" target="_blank" href={repo.html_url}>link </a>
             <p className={s.desc}>{repo.html_url}</p>
             <p className={s.desc}>Description-- {repo.description}</p>
             <p className={s.desc}>Date: { repo.created_at.split('T').shift()}</p>
