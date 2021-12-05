@@ -27,7 +27,7 @@ const onChangeHandler = e => {
     const profileJson = await profile.json();
     if (!repo) return toast.error('Please input repositories');
     if (!repo.trim()) return toast.error('Please input repositories');
-    if (profileJson.items.length === 0) return toast.warning('Please input repositories');
+    // if(profileJson) return  toast.error('No find repositories');
     if (profileJson) {
       dispatch(actions.fetchRepositoriesSuccess(profileJson))
     }
@@ -35,7 +35,7 @@ const onChangeHandler = e => {
   const submitHandler = (e) => {
     e.preventDefault();
     getData();
-    dispatch(actions.setCurrentPage()) 
+    dispatch(actions.setCurrentPage({ perPage, totalCount, currentPage:1, repo})) 
   }
     return (
       <>
